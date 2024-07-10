@@ -16,6 +16,7 @@ public struct PlayerData : IEquatable<PlayerData>, INetworkSerializable
         this.playerPlaced = playerPlaced;
     }
 
+    // IEquatable<T> 인터페이스의 Equal(T other) 메소드 구현
     public bool Equals(PlayerData other)
     {
         return (
@@ -26,6 +27,7 @@ public struct PlayerData : IEquatable<PlayerData>, INetworkSerializable
         );
     }
 
+    // INetworkSerializable 인터페이스의 NetworkSerialize<T>(BufferSerializer<T> serializer) where T : IReaderWriter 메소드 구현
     public void NetworkSerialize<T>(BufferSerializer<T> serializer) where T : IReaderWriter
     {
         serializer.SerializeValue(ref clientID);

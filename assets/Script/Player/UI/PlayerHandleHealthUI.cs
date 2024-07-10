@@ -21,6 +21,8 @@ public class PlayerHandleHealthUI : NetworkBehaviour
         AllPlayerDataManager.Instance.OnPlayerHealthChanged -= InstanceOnOnPlayerHealthChangedServerRpc;
     }
 
+
+    // 실제로 Health가 변경된 플레이어 정보만 업데이트 되면 되므로, 서버에서 해당 플레이어가 피격자(hit.to)인 플레이어만 체크
     [ServerRpc(RequireOwnership = false)]
     private void InstanceOnOnPlayerHealthChangedServerRpc(ulong id)
     {
@@ -38,6 +40,7 @@ public class PlayerHandleHealthUI : NetworkBehaviour
         }
     }
 
+    // 피격자(hit.to)로 체크된 플레이어 정보만, 모든 플레이어가 Health UI업데이트 실행
     [ClientRpc]
     private void SetHealthTextClientRpc(ulong id)
     {
