@@ -119,7 +119,7 @@ public class AllPlayerDataManager : NetworkBehaviour
 
     void ResetNetworkList()
     {
-        for(int i =0; i < allPlayerData.Count; i++)
+        for(int i = 0; i < allPlayerData.Count; i++)
         {
             PlayerData resetPlayer = new PlayerData(
                 allPlayerData[i].clientID,
@@ -157,7 +157,7 @@ public class AllPlayerDataManager : NetworkBehaviour
         {
             if (ids.from != ids.to)
             {
-                for (int i = 0; i <allPlayerData.Count; i++)
+                for (int i = 0; i < allPlayerData.Count; i++)
                 {
                     if (allPlayerData[i].clientID == ids.to)
                     {
