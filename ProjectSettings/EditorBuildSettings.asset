@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/miniGame.unity
     guid: 3f9ffc407a697c14eafb8f5e6547ea1c
+  - enabled: 1
+    path: Assets/Scenes/LoadScene.unity
+    guid: 8c15c6356f884a045bd13e6c7a39c891
   m_configObjects:
     Niantic.Lightship.AR.LightshipSettings: {fileID: 11400000, guid: 4379478a9fed5574785875be08fd64ab, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: abe3672147ab2334681b78f5bd45eed5, type: 2}

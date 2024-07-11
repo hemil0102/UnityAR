@@ -1474,7 +1474,6 @@ GameObject:
   - component: {fileID: 724062755}
   - component: {fileID: 724062757}
   - component: {fileID: 724062756}
-  - component: {fileID: 724062759}
   m_Layer: 0
   m_Name: SceneryAR
   m_TagString: Untagged
@@ -1533,19 +1532,6 @@ MonoBehaviour:
   StartGameButton: {fileID: 506899632}
   CreateRoomButton: {fileID: 979776308}
   JoinRoomButton: {fileID: 1488731557}
---- !u!114 &724062759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 724062754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c67d8e89476d974f8f1754e0c8bac32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RetakeImageButton: {fileID: 0}
 --- !u!1 &834501375
 GameObject:
   m_ObjectHideFlags: 0
